@@ -17,7 +17,6 @@ Este repositorio contiene el proyecto de una página web estática profesional p
   - [Animaciones y Librerías](#animaciones-y-librerías)
 - [Diseño Responsivo](#diseño-responsivo)
 - [Cómo Ejecutar el Proyecto](#cómo-ejecutar-el-proyecto)
-- [Créditos y Recursos](#créditos-y-recursos)
 
 ---
 
