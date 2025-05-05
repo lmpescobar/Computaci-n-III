@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Repair - Servicios y Repuestos John Deere</title>
+    <!-- Font Awesome, Montserrat, Swiper.js y AOS.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo-jd-placeholder.png" alt="JD Repair Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Servicios</a></li>
+                <li><a href="parts.html"><i class="fas fa-cube"></i> Repuestos</a></li>
+                <li><a href="about.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>¡Bienvenido a JD Repair!</h1>
+            <p>Expertos en servicios y repuestos <span class="highlight">John Deere</span>.<br>Tu maquinaria en las mejores manos.</p>
+            <a href="contact.html" class="cta-btn"><i class="fas fa-paper-plane"></i> Solicita tu cotización</a>
+        </div>
+    </section>
+    <div class="section-divider" data-aos="zoom-in"></div>
+    <section class="features" data-aos="fade-up">
+        <div class="feature-card fade-in">
+            <img src="assets/images/service-engine.jpg" alt="Servicio de Motor">
+            <div class="feature-info">
+                <h2><i class="fas fa-wrench"></i> Servicios Especializados</h2>
+                <p>Mantenimiento preventivo y correctivo para motores, transmisiones, hidráulica y más.</p>
+            </div>
+        </div>
+        <div class="feature-card fade-in">
+            <img src="assets/images/parts-engine-components.jpg" alt="Repuestos John Deere">
+            <div class="feature-info">
+                <h2><i class="fas fa-cogs"></i> Repuestos Originales</h2>
+                <p>Stock de repuestos y accesorios originales John Deere para asegurar el mejor rendimiento.</p>
+            </div>
+        </div>
+        <div class="feature-card fade-in">
+            <img src="assets/images/about-team.jpg" alt="Equipo Técnico">
+            <div class="feature-info">
+                <h2><i class="fas fa-user-tie"></i> Equipo Profesional</h2>
+                <p>Técnicos certificados y capacitados para brindarte un servicio de calidad y confianza.</p>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider" data-aos="zoom-in"></div>
+    <section class="banner fade-in" data-aos="fade-up">
+        <h2><i class="fas fa-award"></i> +10 años de experiencia al servicio del campo</h2>
+        <p>Confía en quienes más saben de John Deere. ¡Tu productividad es nuestra prioridad!</p>
+    </section>
+    <div class="section-divider" data-aos="zoom-in"></div>
+    <section class="testimonials fade-in" data-aos="fade-up">
+        <h2><i class="fas fa-comment-dots"></i> Testimonios de Clientes</h2>
+        <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial">
+                    <p>“Gracias a JD Repair mi tractor volvió a funcionar como nuevo. ¡Servicio rápido y profesional!”</p>
+                    <span><i class="fas fa-user"></i> Carlos M., Agricultor</span>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <p>“Siempre encuentro los repuestos originales que necesito y el personal es muy amable.”</p>
+                    <span><i class="fas fa-user"></i> Laura G., Ingeniera Agrónoma</span>
+                </div>
+                <div class="swiper-slide testimonial">
+                    <p>“Recomiendo JD Repair por su experiencia y honestidad. ¡Son los mejores en la zona!”</p>
+                    <span><i class="fas fa-user"></i> Juan P., Empresario</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 JD Repair. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="parts.html">Repuestos</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 900, once: true });
+        const swiper = new Swiper('.testimonials-swiper', {
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            breakpoints: {
+                700: { slidesPerView: 2 },
+                1000: { slidesPerView: 3 }
+            }
+        });
+    </script>
+</body>
+</html>
